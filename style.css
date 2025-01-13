@@ -169,86 +169,83 @@ button a{
 
 
 /* Mobile (up to 480px) */
-@media screen and (max-width: 480px) {
-    nav {
-        display: flex;
-        align-items: flex-start;
-        padding: 15px; /* Further reduced padding */
-    }
 
+@media screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    nav {
+        padding: 2vh 3vw;
+    }
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 2vh;
         text-align: center;
     }
-
     nav ul.active {
         display: flex;
     }
-
     nav ul li {
         width: 100%;
-        margin: 5px 0; /* Reduced margin between list items */
+        margin: 1vh 0;
     }
-    nav ul li a{
+    nav ul li a {
         display: block;
-        padding: 10px;
-        font-size: 14px;
+        padding: 1.5vh 0;
+        font-size: 3.5vw;
     }
-
-    .menu-toggle {
-        display: block;
-        align-self: flex-end;
-        font-size: 20px; /* Slightly smaller icon */
-    }
-
     .content {
         flex-direction: column;
-        padding: 15px; /* Further reduced padding */
+        padding: 5vh 5vw;
         text-align: center;
     }
-
     .content img {
-        width: 95%; /* Take up more width */
+         width: 95%; /* Take up more width */
         max-width: 250px; /* Further reduce max-width */
         margin-bottom: 15px;
     }
-
     .content .text {
         width: 100%;
     }
-
+    .content .text h5 {
+        font-size: 2.5vw;
+    }
     .content .text h1 {
-        font-size: 28px; /* Further reduced h1 size */
+        font-size: 7vw;
     }
-
     .content .text p {
-        font-size: 12px; /* Further reduced p size */
-        line-height: 1.3;
+        font-size: 3.5vw;
+        line-height: 1.4;
     }
-    .order{
+    .order {
         flex-direction: column;
         align-items: center;
+        margin: 3vh 0 1.5vh;
     }
-    .order .btn{
-        margin: 8px 0;
+    .order .btn {
+        margin: 1vh 0;
         width: 90%;
-        font-size: 10px;
-        padding: 6px;
+        font-size: 3vw;
+        padding: 1vh 2vw;
     }
-    .order .price p{
-        font-size: 16px;
+    .order .price p {
+        font-size: 4vw;
     }
-    .order .price span{
-        font-size: 12px;
+    .order .price span {
+        font-size: 3.5vw;
     }
-    .icons{
+    .icons {
         display: flex;
+        justify-content: center; 
     }
     .icons i{
-        padding: 10px;
+        padding: 1vh;
+        font-size: 4vw;
     }
 }
 
